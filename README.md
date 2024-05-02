@@ -13,3 +13,8 @@ docker run -it -v "C:\Training\Docker\utility-containers-01:/app" mynpm init
 ### Now we have the package.json file again
 ### And we can call another npm command, for example **npm install**:
 docker run -it -v "C:\Training\Docker\utility-containers-01:/app" mynpm install
+
+## Using compose.yaml we can simplify the command to do the same thing.
+
+docker compose run --rm npm init
+docker container prune
